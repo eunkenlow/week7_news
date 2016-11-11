@@ -9,7 +9,7 @@ function getTitle(articles) {
     ourData.response.results.forEach(function(object, index) {
       var newdiv = document.createElement("div");
       var newimg = document.createElement("div");
-      newimg.innerHTML = "<img src=" + object.fields.thumbnail + ">";
+      newimg.innerHTML = "<a href="+ object.webUrl + "><img id=photo" + index + " src=" + object.fields.thumbnail + "></a>";
       newdiv.innerHTML = "<li><a href=" + "#" + index + " id=" +index+">"+ object.webTitle + "</a></li><br>";
       document.getElementById('news').appendChild(newimg);
       document.getElementById('news').appendChild(newdiv);
@@ -23,6 +23,5 @@ function getTitle(articles) {
   };
 
   ourRequest.send();
-
 }
 getTitle(articles);
