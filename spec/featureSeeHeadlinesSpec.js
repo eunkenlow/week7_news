@@ -1,7 +1,7 @@
 function seeHeadlines() {
   if(document.getElementById('0') === null) {
-    console.log("Test failed");
+    console.log("Feature test: Test failed");
   } else {
-    console.log("Test passed");
+    console.log("Feature test: Test passed");
   }
 }
