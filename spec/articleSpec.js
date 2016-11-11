@@ -4,4 +4,11 @@ function unitAddTitle() {
   expect.isTrue(article._title === 'Donald Trump as President');
 }
 
+function unitAddSummary() {
+  var article = new Article();
+  article.addSummary('Donald Trump');
+  expect.isTrue(article._summary === 'Donald Trump');
+}
+
 unitAddTitle();
+unitAddSummary();
