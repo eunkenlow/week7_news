@@ -1,5 +1,5 @@
 ___
-# week7_news
+#News App!
 ___
 ![](https://media.giphy.com/media/n2IPMYMthV0m4/giphy.gif)
 ___
