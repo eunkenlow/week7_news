@@ -23,6 +23,5 @@ function getTitle(articles) {
   };
 
   ourRequest.send();
-
 }
 getTitle(articles);
