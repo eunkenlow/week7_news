@@ -7,7 +7,11 @@
 
     </script>
     <!-- include source files here -->
-    <script src="src/article.js"></script>
+    <script src="models/article.js"></script>
+    <script src="models/articleList.js"></script>
+    <script src= "controller/articleHash.js" ></script>
+    <script src= "controller/getHeadline.js" ></script>
+    <script src= "controller/getSummary.js" ></script>
     <!-- include test files here -->
     <script src="spec/featureSeeHeadlinesSpec.js"></script>
     <script src="spec/featureSeeSummarySpec.js"></script>
@@ -17,8 +21,12 @@
 
   </head>
   <body>
-    <script>seeSummary();</script>
-    <script>seeHeadlines();</script>
-    <script>seePhotoLink();</script>
+    <h1 id="news"></h1>
+    <h1 id="summary"></h1>
+
+
+    <script>setTimeout(seeHeadlines, 1000);</script>
+    <script>setTimeout(seeSummary, 1000);</script>
+    <script>setTimeout(seePhotoLink, 1000);</script>
   </body>
 </html>
